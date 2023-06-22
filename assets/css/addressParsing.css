@@ -1,0 +1,154 @@
+#address-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 100vw;
+  height: auto;
+  margin-top: 8rem;
+}
+
+.div-explicação-address {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 13%;
+  width: 100%;
+}
+
+.div-explicação-address > h5 {
+  border: 2px solid white;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 100%;
+  font-size: 1.1em;
+  padding-block: 0.5rem;
+}
+
+.form-endereço {
+  width: 100vw;
+  color: white;
+}
+
+.form-input-endereço {
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.container-informacoes {
+  border: 2px solid white;
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  height: auto;
+  position: relative;
+  top: -3rem;
+}
+
+.tabela-dados {
+  border-radius: 8px;
+  border: 1px solid white;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  width: 60%;
+  height: 90%;
+  margin-top: 1.7rem;
+}
+
+.cabeçalho-tabela,
+.corpo-linha {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cabeçalho-tabela > span,
+.corpo-linha > span {
+  width: calc(100% / 3);
+}
+
+.span-score,
+.corpo-linha > span:nth-of-type(3) {
+  display: none !important;
+}
+
+progress,
+.td-score {
+  display: none !important;
+}
+
+@media all and (min-width: 650px) {
+  .div-explicação-address > h5,
+  .form-input-endereço,
+  .container-informacoes {
+    max-width: 70%;
+  }
+}
+
+@media all and (min-width: 850px) {
+  .div-explicação-address > h5,
+  .form-input-endereço,
+  .container-informacoes {
+    max-width: 70%;
+  }
+
+  .span-score,
+  .corpo-linha > span:nth-of-type(3) {
+    display: block !important;
+  }
+
+  progress,
+  .td-score {
+    display: block !important;
+  }
+
+  .corpo-linha > span > progress {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px)
+{
+    #address-wrapper
+    {
+        margin-top: 10rem;
+        justify-content: flex-start;
+
+    }
+
+    .div-explicação-address
+    {
+        top:0%;
+
+    }
+
+    #footer-footer
+    {
+        display: block !important;
+    }
+}
+
+@media all and (min-width: 1366px) {
+
+    .div-explicação-address>h5,
+    .form-input-endereço,
+    .container-informacoes {
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,395 @@
+#deteccao-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin-top: 2rem;
+  overflow-y: scroll;
+}
+
+.div-explicação-plate-recognition {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 13%;
+  width: 100%;
+}
+
+.div-explicação-plate-recognition > h5 {
+  border: 2px solid white;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 100%;
+  font-size: 1.1em;
+  padding-block: 0.5rem;
+}
+
+.exibe-card-carros {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.25rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-carro {
+  width: 16.6rem;
+  height: 12.6rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.imagens-card-carro {
+  border-radius: 8px;
+  width: 95%;
+  height: 95%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  object-fit: cover;
+}
+
+.mostra-resultado-detecção {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 379px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: auto;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.resultado-detecção {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.mostra-imagem-resultado {
+  position: relative;
+  width: 363px;
+  height: 240px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+.imagem-resultado {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.tabela-dados {
+  border-radius: 8px;
+  border: 1px solid white;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  width: 60%;
+  height: 90%;
+  margin-top: 1.7rem;
+}
+
+.cabeçalho-tabela,
+.corpo-linha {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+.cabeçalho-tabela > span,
+.corpo-linha > span {
+  width: calc(100% / 3);
+}
+
+.span-score,
+.corpo-linha > span:nth-of-type(3) {
+  display: none !important;
+}
+
+@media all and (max-width: 300px) {
+  .upload > #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card-carro {
+    height: 8rem !important;
+  }
+
+  .mostra-imagem-resultado {
+    height: 8rem;
+  }
+
+  .mostra-imagem-resultado > img {
+    height: 90%;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .div-explicação-plate-recognition {
+    margin-top: 5rem;
+  }
+
+  .exibe-card-carros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .mostra-resultado-detecção {
+    display: flex;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .mostra-resultado-detecção {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 2rem;
+  }
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .file-upload {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4.4rem;
+    margin-left: 1rem;
+  }
+
+  .nome-arquivo {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .div-explicação-plate-recognition {
+    margin-top: 5rem;
+  }
+
+  .exibe-card-carros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .card-carro {
+    width: 80%;
+    height: 15rem;
+  }
+
+  .mostra-resultado-detecção {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 2rem;
+  }
+
+  .mostra-imagem-resultado > img {
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mostra-imagem-resultado {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .file-upload {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4.4rem;
+    margin-left: 1rem;
+  }
+
+  .nome-arquivo {
+    height: auto;
+  }
+}
+
+@media all and (min-width: 850px) {
+  .exibe-card-carros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .file-upload {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4.4rem;
+    margin-left: 1rem;
+  }
+
+  .nome-arquivo {
+    height: auto;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .exibe-card-carros {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    height: auto;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .div-explicação-plate-recognition > h5 {
+    margin-top: 11rem;
+  }
+
+  .exibe-card-carros {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  #form{
+    width: 50%;
+    position: relative;
+    top: -5rem;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .div-explicação-plate-recognition > h5 {
+    max-width: 60%;
+  }
+
+  .exibe-card-carros {
+    margin-top: 8rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+  }
+
+  .mostra-resultado-detecção {
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upload {
+    position: relative;
+  }
+
+  .tabela-dados {
+    height: auto;
+  }
+
+  .nome-arquivo {
+    height: auto;
+  }
+}

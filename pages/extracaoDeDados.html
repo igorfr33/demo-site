@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+  <head>
+
+    <!-- Title -->
+    <title>Extractify</title>
+
+    <!-- Script do reCaptcha -->
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfbS0AmAAAAAAXuSZle5UsTx6cKS8X_vQU53Gd7"></script>
+
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/vendor/fullPage.js/dist/jquery.fullpage.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/slick/slick.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/vegas/vegas.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/magnific-popup/dist/magnific-popup.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CMontserrat:200,300,400,500,700&display=swap">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/extracaoDeDados.css">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="../assets/fav_icon.jpg" type="image/x-icon" />
+
+  </head>
+  <body class="gradient">
+
+    <!-- Loader -->
+    <div class="loader bg-dark">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Carregando...</span>
+      </div>
+    </div>
+
+    <div id="top"></div>
+
+    <!-- Site navigation -->
+    <nav
+      class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4"
+      data-navbar-base="navbar-dark"
+      data-navbar-toggled="navbar-light"
+      data-navbar-scrolled="navbar-light"
+    >
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="navbar-brand-img" alt="" />
+      </a>
+
+      <!-- Toggler -->
+      <button
+        class="navbar-toggler-alternative"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-alternative-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Navigation -->
+        <ul class="navbar-nav ml-auto" id="navigation">
+          <li class="nav-item" data-menuanchor="home">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./conversaoDeEndereco.html"
+              >Conversão de Endereço</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./deteccaoDePlacas.html"
+              >Detecção de Placas</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./extracaoDeDados.html">Extração de Dados Nfe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./extracaoDeDadosDoc.html">Extração de Dados Doc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./provaDeVida.html">Prova de Vida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./reconhecimentoDeFaces.html"
+              >Reconhecimento Facial</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./entreEmContato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Back To Top Button -->
+    <a href="#top" class="backtotop">
+      <span>Voltar ao Início</span>
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="ln-fullpage" data-navigation="true" id="extracao-de-dados-wrapper">
+
+        <div class="div-explicação-nf">
+          <h5 class="texto-explicação">Este é nosso módulo para extração de dados de Notas Fiscais Eletrônicas.<br>Para realizar o teste basta enviar a chave de acesso da Nf-e</h5>
+        </div>
+
+        <div class="form-endereço-nf">
+          <div class="input-container">
+            <div class="upload">
+              <form id="form" class="form-input-chave-de-acesso">
+                <input type="text" id="cf-name" name="cf-name" placeholder="Digite a chave de acesso"
+                  class="form-control required input-endereco" />
+                <div id="recaptcha" class="g-recaptcha" data-callback="sendForm" data-size="invisible"></div>
+                <button type="submit" id="teste"
+                  class="btn btn-soft-white d-block d-xl-inline-block mb-3 mb-lg-0 ml-lg-3 w-100 w-lg-auto">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-informacoes">
+          <!-- <div class="mostra-dados-retirados"> -->
+          <div class="tabela-dados" id="tabela-dados">
+            <div class="cabeçalho-tabela">
+              <span class="span-campo">Campo</span>
+              <span class="span-valor">Valor</span>
+              <span class="span-score">Score</span>
+            </div>
+            <div id="corpo-tabela"></div>
+          </div>
+          <!-- </div> -->
+          <hr />
+        </div>  
+    </div>
+    
+    <!-- Footer -->
+    <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-xl-12 col-xxl-10 mx-auto text-center">
+            <ul class="list-inline mb-5">
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
+                  <i class="fab fa-facebook-f btn-icon-inner"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
+                  <i class="fab fa-twitter btn-icon-inner"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
+                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
+                  <i class="fab fa-dribbble btn-icon-inner"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="mb-0">© 2023 Extractify - All Rights Reserved - <a href="#!" class="text-gray-400">Terms of Service</a></p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- footer end -->
+
+    
+
+    <!-- Libs JS -->
+    <script src="../scripts/reCaptcha/reCaptchaExtracaoDeDados.js"></script>
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendor/popper.js/dist/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/fullPage.js/dist/scrolloverflow.min.js"></script>
+    <script src="../assets/vendor/fullPage.js/dist/jquery.fullpage.min.js"></script>
+    <script src="../assets/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+    <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+    <script src="../assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="../assets/vendor/granim.js/dist/granim.min.js"></script>
+    <script src="../assets/vendor/slick/slick.min.js"></script>
+    <script src="../assets/vendor/vegas/vegas.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Script Tabela -->
+    <script src="../scripts/table.js"></script>
+    <script src="../scripts/buttonUploadPdf.js"></script>
+
+  </body>
+</html>

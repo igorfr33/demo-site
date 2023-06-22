@@ -1,0 +1,585 @@
+#prova-de-vida-wrapper {
+  overflow-y: scroll;
+}
+
+.div-explicação-prova-de-vida {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 37rem;
+  margin-top: 6rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 43.7rem;
+}
+
+.texto-explicação {
+  color: white;
+  text-align: center;
+}
+
+.imagens-exemplo {
+  padding: 10px;
+  padding-bottom: 6.2rem;
+  display: flex;
+  position: relative;
+  top: 5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-prova-de-vida-1 {
+  display: flex;
+  margin-right: 20px;
+  width: 20rem;
+  height: 13.75rem;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.imagem-prova-de-vida-2 {
+  display: flex;
+  margin-right: 20px;
+  width: 20rem;
+  height: 13.75rem;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.imagem-prova-de-vida-3 {
+  display: flex;
+  width: 20rem;
+  height: 13.75rem;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.prova-de-vida-1 {
+  display: flex;
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  left: 8px;
+  top: 8px;
+}
+
+.prova-de-vida-2 {
+  display: flex;
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  left: 8px;
+  top: 8px;
+}
+
+.prova-de-vida-3 {
+  display: flex;
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  left: 8px;
+  top: 8px;
+}
+
+.exibe-exemplos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.exemplo {
+  width: 48rem;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.resultado-exemplo {
+  width: 40vh;
+  height: 40vh;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-left: 30px;
+}
+
+.try-with-camera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.button-camera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.container-imagens-exemplo-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagens-exemplo-2 {
+  width: 16.813rem;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.exibe-exemplos-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.titulo-exemplo {
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.tabela-exemplo-2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movimentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tr-movimentos {
+  margin: 20px;
+  border: 1px solid #0088cf;
+  border-radius: 8px;
+}
+
+.exemplo-2 {
+  width: 48rem;
+  padding: 10px;
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-right: 40px;
+  color: white;
+}
+
+@media all and (max-width: 500px) {
+  .div-explicação-prova-de-vida {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .div-explicação-prova-de-vida > h5 {
+    display: flex;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagens-exemplo,
+  .imagem-prova-de-vida-1,
+  .imagem-prova-de-vida-2,
+  .imagem-prova-de-vida-3 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .imagem-prova-de-vida-1 > img,
+  .imagem-prova-de-vida-2 > img,
+  .imagem-prova-de-vida-3 > img {
+    display: flex;
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .exibe-exemplos,
+  .exemplo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .resultado-exemplo {
+    display: flex;
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  .resultado-exemplo > img {
+    display: flex;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+  }
+
+  .exemplo > img {
+    display: flex;
+    position: relative;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .container-imagens-exemplo-2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .imagens-exemplo-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid white;
+    gap: 1rem;
+  }
+
+  .button-camera {
+    margin-top: -4rem;
+  }
+
+  .exibe-exemplos-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .exemplo-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .exemplo-2 > img {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 501px) {
+  .div-explicação-prova-de-vida {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .imagens-exemplo {
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+  }
+
+  .imagem-prova-de-vida-1 > img,
+  .imagem-prova-de-vida-2 > img,
+  .imagem-prova-de-vida-3 > img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .exibe-exemplos {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .exemplo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .resultado-exemplo {
+    display: flex;
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .liveness-score {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .liveness-score > p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .button-camera {
+    margin-top: -4rem;
+  }
+
+  .container-imagens-exemplo-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .container-imagens-exemplo-2 > div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .exibe-exemplos-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .exemplo-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .container-imagens-exemplo-2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-imagens-exemplo-2 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .div-explicação-prova-de-vida {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    max-width: 80%;
+    width: 100%;
+    left: 9rem;
+  }
+
+  .exibe-exemplos {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    left: 12rem;
+  }
+
+  .resultado-exemplo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    bottom: 0.5rem;
+  }
+
+  .resultado-exemplo > img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    top: 4rem;
+    margin-bottom: 4rem;
+    height: 11rem;
+    padding-bottom: 0;
+  }
+
+  .button-camera {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    right: 6rem;
+  }
+
+  .try-with-camera {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    right: 6rem;
+  }
+
+  .container-imagens-exemplo-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 70%;
+    width: 100%;
+  }
+
+  .container-imagens-exemplo-2 > div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    left: 12rem;
+  }
+
+  .exibe-exemplos-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 70%;
+    width: 100%;
+    left: 15rem;
+  }
+
+  .exemplo-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+    width: 100%;
+  }
+
+  #footer{
+    display: none;
+  }
+}
+

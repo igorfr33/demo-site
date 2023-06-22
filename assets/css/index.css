@@ -1,0 +1,193 @@
+#footer {
+  display: none;
+}
+
+@media all and (max-width: 300px) {
+  .image-address-parsing {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .image-address-parsing > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-prova-de-vida {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-prova-de-vida > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-reconhecimento-de-faces {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-reconhecimento-de-faces > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .animated,
+  .visible {
+    visibility: visible !important;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .image-address-parsing {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .image-address-parsing > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-deteccao-de-placas {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-deteccao-de-placas > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-extracao-de-dados {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-extracao-de-dados > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-prova-de-vida {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-prova-de-vida > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagem-reconhecimento-de-faces {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  .imagem-reconhecimento-de-faces > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .animated,
+  .visible {
+    visibility: visible !important;
+  }
+
+  #footer {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .col-xl-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+}
